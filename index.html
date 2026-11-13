@@ -240,24 +240,14 @@ nav ul{gap:20px;font-size:13px}
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 
-/* ===== DEMO ===== */
-.demo-bar{position:relative;z-index:60;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:6px 12px;background:repeating-linear-gradient(135deg,#FFD24A 0 18px,#FFE07F 18px 36px);color:#2A2205;font-size:13px;padding:7px 16px;text-align:center;font-family:Arial,sans-serif}
-.demo-bar b{background:#17292C;color:#FFD24A;padding:2px 10px;border-radius:6px;letter-spacing:.12em}
 .hero-art,.doc .pic,.band,.v-photo,.dir,.svc-media{position:relative}
-.hero-art::after,.doc .pic::after,.band::before,.v-photo::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:3;
- background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='160'%3E%3Ctext x='20' y='95' transform='rotate(-22 130 80)' font-family='Arial' font-weight='700' font-size='30' fill='white' fill-opacity='.3' letter-spacing='6'%3EДЕМО%3C/text%3E%3C/svg%3E")}
-.hero-art::after{inset:8%;border-radius:50%}
-.doc .pic::before,.v-photo::before{content:"ДЕМО";position:absolute;right:12px;top:12px;z-index:4;background:#FFD24A;color:#17292C;font:700 11px Arial,sans-serif;letter-spacing:.14em;padding:5px 9px;border-radius:7px}
-.demo-foot{text-align:center;font-size:12.5px;padding:14px 20px;background:#0A2328;color:#A9C6CA}
-@media (max-width:620px){.demo-bar span{display:none}}
-</style>
+@media (max-width:620px){</style>
 <script>
 /* анимации включаются, только если человек не просил уменьшить движение */
 if(!matchMedia('(prefers-reduced-motion: reduce)').matches){document.documentElement.classList.add('js-anim')}
 </script>
 </head>
 <body>
-<div class="demo-bar" role="note"><b>ДЕМО-ВЕРСИЯ</b><span>Макет нового сайта для ортодонтического центра «Идеалист». Дизайн и разработка — Алексей Кожинов. Не для публикации и копирования.</span></div>
 
 <div id="pre" aria-hidden="true"><div class="mk"><i>И</i><span>ИДЕАЛИСТ</span></div></div>
 
@@ -450,7 +440,6 @@ if(!matchMedia('(prefers-reduced-motion: reduce)').matches){document.documentEle
 </div>
 <div class="warn">ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ. НЕОБХОДИМА КОНСУЛЬТАЦИЯ СПЕЦИАЛИСТА</div>
 </footer>
-<div class="demo-foot">© Демо-версия сайта. Дизайн и разработка — Алексей Кожинов, 2026. Все права защищены.</div>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
 <script src="assets/js/gsap.min.js"></script>
@@ -461,8 +450,8 @@ if(!matchMedia('(prefers-reduced-motion: reduce)').matches){document.documentEle
 document.querySelectorAll('[data-copy]').forEach(function(b){b.addEventListener('click',function(){var t=document.getElementById('toast'),v=b.dataset.copy;
  function show(m){t.textContent=m;t.classList.add('on');setTimeout(function(){t.classList.remove('on')},2200)}
  try{navigator.clipboard.writeText(v).then(function(){show('Скопировано: '+v)},function(){show('Кодовое слово: '+v)})}catch(e){show('Кодовое слово: '+v)}})});
-/* в демо форма никуда не отправляется */
-document.querySelector('form').addEventListener('submit',function(e){if(!/idealist-dent\.ru$/.test(location.hostname)){e.preventDefault();this.querySelector('button span').textContent='Демо: заявка не отправлена'}});
+/* форма пока не подключена */
+document.querySelector('form').addEventListener('submit',function(e){if(!/idealist-dent\.ru$/.test(location.hostname)){e.preventDefault();this.querySelector('button span').textContent='Запишитесь по телефону (812) 501-27-70'}});
 
 (function(){
 var root=document.documentElement;
