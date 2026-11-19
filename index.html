@@ -544,14 +544,15 @@ gsap.to('.in-line',{opacity:.25,duration:1.1,repeat:-1,yoyo:true,ease:'sine.inOu
 
 /* ===== вступление: скролл раскрывает фото через форму логотипа ===== */
 var inFrom=innerWidth<760?'inset(50% 50% 50% 50% round 40px)':'inset(50% 50% 50% 50% round 60px)';
+var inMid=innerWidth<760?'inset(30% 22% 30% 22% round 40px)':'inset(30% 38% 30% 38% round 60px)';
 var sc=gsap.timeline({scrollTrigger:{trigger:'#intro',start:'top top',end:'bottom bottom',scrub:true}});
 sc.to('.in-logo',{yPercent:-60,opacity:0,scale:.9,ease:'none',duration:.35},0)
   .to('.in-side.l',{xPercent:-140,opacity:0,ease:'none',duration:.4},0)
   .to('.in-side.r',{xPercent:140,opacity:0,ease:'none',duration:.4},0)
   .to('.in-foot',{opacity:0,y:30,ease:'none',duration:.2},0)
   .to('.in-ghost',{opacity:0,ease:'none',duration:.4},0)
-  .fromTo('.in-photo',{clipPath:inFrom},{clipPath:(innerWidth<760?'inset(30% 22% 30% 22% round 40px)':'inset(30% 38% 30% 38% round 60px)'),ease:'none',duration:.3},.12)
-  .to('.in-photo',{clipPath:'inset(0% 0% 0% 0% round 0px)',ease:'none',duration:.45},.42)
+  .fromTo('.in-photo',{clipPath:inFrom},{clipPath:inMid,ease:'none',duration:.3,immediateRender:true},.12)
+  .fromTo('.in-photo',{clipPath:inMid},{clipPath:'inset(0% 0% 0% 0% round 0px)',ease:'none',duration:.45,immediateRender:false},.42)
   .to('.in-photo img',{scale:1,ease:'none',duration:.75},.12)
   .to('.in-band',{scaleY:0,opacity:0,ease:'none',duration:.25},.55)
   .to('.in-frame',{opacity:0,ease:'none',duration:.25},.5)
