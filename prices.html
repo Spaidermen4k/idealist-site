@@ -22,8 +22,8 @@
 @font-face{font-family:"HNC";font-weight:500;font-display:swap;src:url("assets/fonts/helveticaneuecyr-medium-webfont.woff2") format("woff2")}
 
 :root{
- --paper:#F6F4EF; --paper-2:#EEEBE4; --ink:#13232A; --ink-2:#0E1F24; --muted:#56646A; --rule:#D8D3C9;
- --teal:#09A7BD; --teal-d:#077D8E; --teal-l:#DFF3F6; --coral:#D9573A; --coral-d:#B9462D;
+ --paper:#F8F7F3; --paper-2:#EFEDE6; --ink:#022C57; --ink-2:#011F40; --muted:#4A5F7A; --rule:#E2DED3;
+ --teal:#09A7BD; --teal-d:#0093A2; --teal-l:#E6F4F7; --coral:#0093A2; --coral-d:#022C57;
  --f:"HNC","Helvetica Neue",Helvetica,Arial,sans-serif;
  --ease:cubic-bezier(.2,.7,.2,1);
  --wrap:1280px; --pad:clamp(20px,4vw,48px);
@@ -55,7 +55,7 @@ p{margin:0}
 .arrow:hover::after{transform:translateX(4px)}
 
 /* Шапка */
-header{position:sticky;top:0;z-index:40;background:rgba(246,244,239,.94);backdrop-filter:blur(10px);border-bottom:1px solid transparent;transition:border-color .3s}
+header{position:sticky;top:0;z-index:40;background:rgba(248,247,243,.94);backdrop-filter:blur(10px);border-bottom:1px solid transparent;transition:border-color .3s}
 header.scrolled{border-color:var(--rule)}
 .hdr{display:flex;align-items:center;justify-content:space-between;gap:24px;height:76px}
 .logo{display:flex;align-items:center;gap:12px;text-decoration:none}
@@ -77,7 +77,7 @@ nav ul{display:flex;gap:28px;list-style:none;margin:0;padding:0;font-size:13px;l
 .offer strong{font-size:34px;font-weight:500;color:var(--coral);letter-spacing:-.02em}
 .offer span{font-size:15px;color:var(--muted)}
 .code{font:500 14px var(--f);letter-spacing:.12em;background:transparent;border:1px dashed var(--coral);color:var(--coral-d);padding:7px 12px;cursor:pointer;transition:background-color .18s,transform .18s var(--ease)}
-.code:hover{background:#FBE9E3;transform:translateY(-1px)}
+.code:hover{background:#E6F4F7;transform:translateY(-1px)}
 .ctas{display:flex;flex-wrap:wrap;gap:12px}
 .hero-photo{position:relative;overflow:hidden;min-height:520px}
 .hero-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%}
@@ -130,18 +130,18 @@ section.screen{min-height:100svh;display:flex;align-items:center;padding:96px 0}
 
 /* Тёмная глава: акции */
 .dark{background:var(--ink-2);color:var(--paper)}
-.dark .head p{color:#A9B9BD}
-.promos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid #2A3E44}
-.promo{padding:36px 32px 36px 0;display:flex;flex-direction:column;gap:16px;border-right:1px solid #2A3E44}
+.dark .head p{color:#A7B8CC}
+.promos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid #1A4573}
+.promo{padding:36px 32px 36px 0;display:flex;flex-direction:column;gap:16px;border-right:1px solid #1A4573}
 .promo + .promo{padding-left:32px}
 .promo:last-child{border-right:0}
 .promo .big{font-size:clamp(56px,6vw,96px);font-weight:300;letter-spacing:-.04em;line-height:.9;color:var(--teal)}
 .promo h3{font-size:20px;font-weight:500}
-.promo p,.promo li{color:#BACACD;font-size:15.5px}
+.promo p,.promo li{color:#B4C3D4;font-size:15.5px}
 .promo ul{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:6px}
-.promo .code{color:#FFB8A6;border-color:#E9876F}.promo .code:hover{background:#2A3E44}
+.promo .code{color:#99D3DF;border-color:#09A7BD}.promo .code:hover{background:#1A4573}
 .promo .link{margin-top:auto;font-size:14px;letter-spacing:.06em;text-transform:uppercase}
-.terms{margin-top:40px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;font-size:14.5px;color:#A9B9BD}
+.terms{margin-top:40px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;font-size:14.5px;color:#A7B8CC}
 .terms b{display:block;color:var(--paper);font-weight:500;margin-bottom:4px}
 
 /* Гигиенисты */
@@ -185,13 +185,13 @@ summary::after{content:"+";font-weight:300;font-size:26px;line-height:1;transiti
 details[open] summary::after{transform:rotate(45deg)}
 details p{margin-top:12px;color:var(--muted)}
 
-footer{background:var(--ink-2);color:#A9B9BD;font-size:14.5px}
+footer{background:var(--ink-2);color:#A7B8CC;font-size:14.5px}
 .fcols{display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:32px;padding:64px 0 36px}
 footer b{color:var(--paper);display:block;font-weight:500;margin-bottom:12px}
 footer a{display:block;text-decoration:none;line-height:2}
 footer a:hover{color:var(--paper)}
-.legal{border-top:1px solid #2A3E44;padding:18px 0 28px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:12.5px}
-.warn{background:var(--ink-2);color:var(--paper);text-align:center;font-weight:500;letter-spacing:.1em;font-size:clamp(12px,1.6vw,17px);padding:18px var(--pad);border-top:1px solid #2A3E44}
+.legal{border-top:1px solid #1A4573;padding:18px 0 28px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:12.5px}
+.warn{background:var(--ink-2);color:var(--paper);text-align:center;font-weight:500;letter-spacing:.1em;font-size:clamp(12px,1.6vw,17px);padding:18px var(--pad);border-top:1px solid #1A4573}
 .toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,200%);visibility:hidden;background:var(--ink);color:#fff;padding:12px 20px;font-size:14px;z-index:90;transition:transform .3s var(--ease)}
 .toast.on{transform:translate(-50%,0);visibility:visible}
 .mbar{display:none}
@@ -209,7 +209,7 @@ html.js [data-masked-reveal].is-split{visibility:visible}
  .hero-photo{min-height:420px;order:-1}
  .head,.about .grid,.treat .grid,.visit .grid,.faq .grid{grid-template-columns:1fr}
  .promos,.terms{grid-template-columns:1fr}
- .promo,.promo + .promo{padding:32px 0;border-right:0;border-bottom:1px solid #2A3E44}
+ .promo,.promo + .promo{padding:32px 0;border-right:0;border-bottom:1px solid #1A4573}
  .docs{grid-template-columns:1fr 1fr}
  .fcols{grid-template-columns:1fr 1fr}
  section.screen{min-height:0;padding:80px 0}
@@ -242,10 +242,10 @@ nav a[aria-current]{color:var(--teal-d)}
 .p-hero .lede{margin-top:20px;font-size:19px;font-weight:300;color:var(--muted);max-width:560px}
 .hcard{background:var(--ink-2);color:var(--paper);padding:28px;display:grid;gap:12px;text-decoration:none;transition:transform .2s var(--ease)}
 .hcard:hover{transform:translateY(-3px)}
-.hcard small{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#8FB4BB}
+.hcard small{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#8FA9C4}
 .hcard b{font-weight:400;font-size:20px;line-height:1.3}
 .hcard strong{font-weight:500;font-size:34px;letter-spacing:-.02em;color:#fff}
-.hcard span{font-size:15px;color:#FBC8BB}
+.hcard span{font-size:15px;color:#99D3DF}
 .p-wrap{display:grid;grid-template-columns:280px 1fr;gap:56px;padding:48px 0 96px}
 .p-side{position:sticky;top:100px;align-self:start;display:grid;gap:20px}
 .search{position:relative}
@@ -274,7 +274,7 @@ nav a[aria-current]{color:var(--teal-d)}
 .p-cta{background:var(--ink-2);color:var(--paper)}
 .p-cta .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:24px;padding-top:56px;padding-bottom:56px}
 .p-cta h2{font-size:clamp(28px,3vw,44px)}
-.p-cta p{color:#A9B9BD;margin-top:10px}
+.p-cta p{color:#A7B8CC;margin-top:10px}
 @media (max-width:980px){
  .p-hero{grid-template-columns:1fr}
  .p-wrap{grid-template-columns:1fr;gap:24px}
@@ -292,48 +292,48 @@ nav a[aria-current]{color:var(--teal-d)}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 
 /* ===== тема как на главной (профгигиена) ===== */
-:root{--paper:#fff;--paper-2:#F2FAFC;--ink:#17292C;--ink-2:#065F6C;--muted:#4C6165;--rule:#D6E4E7;--teal:#09A7BD;--teal-d:#07879A;--teal-l:#E3F5F8;--coral:#D9573A;--coral-d:#B9462D}
+:root{--paper:#fff;--paper-2:#F8F7F3;--ink:#022C57;--ink-2:#022C57;--muted:#4A5F7A;--rule:#D7E3EA;--teal:#09A7BD;--teal-d:#0093A2;--teal-l:#E6F4F7;--coral:#0093A2;--coral-d:#022C57}
 body{background:#fff}
 h1,h2,h3{font-weight:500;letter-spacing:-.015em}
 .p-hero h1,.d-hero h1,.v-copy h1{font-weight:500}
 .p-hero h1 b,.d-hero h1 b{color:var(--teal)}
 header{background:rgba(255,255,255,.94);backdrop-filter:blur(14px)}
-header.scrolled{border-color:transparent;box-shadow:0 8px 30px rgba(7,135,154,.08)}
+header.scrolled{border-color:transparent;box-shadow:0 8px 30px rgba(0,147,162,.08)}
 .hdr{height:80px}
 .logo i{width:48px;height:48px;border-radius:14px;font-size:22px}
 .logo b{color:var(--teal-d);font-size:22px;letter-spacing:.08em}
 .logo small{color:var(--teal-d);font-weight:300}
 nav ul{font-size:14px;font-weight:500;letter-spacing:.05em;gap:24px}
-.hdr-r .tel{color:#D9573A;font-size:18px}
+.hdr-r .tel{color:#0093A2;font-size:18px}
 .btn{border-radius:12px;min-height:56px;text-transform:uppercase;letter-spacing:.04em;font-size:15px}
-.btn-primary{background:#D9573A}.btn-primary:hover{background:#065F6C}
-.btn-line{border:2px solid var(--teal);color:#065F6C}.btn-line:hover{background:var(--teal);color:#fff}
-.btn-light{background:#fff;color:#065F6C}.btn-light:hover{background:#D9573A;color:#fff}
-.p-hero,.d-hero{background:linear-gradient(180deg,#F2FAFC,#fff);margin:0 calc(-1*var(--pad));padding-left:var(--pad);padding-right:var(--pad);border-radius:0 0 28px 28px;border-bottom:0}
+.btn-primary{background:#0093A2}.btn-primary:hover{background:#022C57}
+.btn-line{border:2px solid var(--teal);color:#022C57}.btn-line:hover{background:var(--teal);color:#fff}
+.btn-light{background:#fff;color:#022C57}.btn-light:hover{background:#0093A2;color:#fff}
+.p-hero,.d-hero{background:linear-gradient(180deg,#F8F7F3,#fff);margin:0 calc(-1*var(--pad));padding-left:var(--pad);padding-right:var(--pad);border-radius:0 0 28px 28px;border-bottom:0}
 .hcard,.v-card{background:var(--teal);border-radius:24px}
-.hcard small{color:#E1F6F9}.hcard span{color:#fff}
-.v-card p{color:#E1F6F9}
+.hcard small{color:#EAF5F8}.hcard span{color:#fff}
+.v-card p{color:#EAF5F8}
 .cat h2,.grp h2{border-bottom:2px solid var(--teal)}
-.plist .row:hover{background:#F2FAFC}
+.plist .row:hover{background:#F8F7F3}
 .search input{border-radius:12px;border-color:var(--rule)}
 .chips button{border-radius:12px}
 .chips button[aria-pressed=true]{background:var(--teal);border-color:var(--teal);color:#fff}
-.doc .pic,.v-photo{border-radius:24px;background:#E3F5F8}
+.doc .pic,.v-photo{border-radius:24px;background:#E6F4F7}
 .v-more img{border-radius:10px}
-.v-text blockquote{border-radius:0 18px 18px 0;background:#F2FAFC}
+.v-text blockquote{border-radius:0 18px 18px 0;background:#F8F7F3}
 .p-cta{background:var(--teal)}
-.p-cta p{color:#E1F6F9}
-.p-side li a::before{background:#D9573A}
-footer{background:#0A3238}
-.warn{background:#0A3238}
+.p-cta p{color:#EAF5F8}
+.p-side li a::before{background:#0093A2}
+footer{background:#022C57}
+.warn{background:#022C57}
 
 .hero-art,.doc .pic,.band,.v-photo,.dir,.svc-media{position:relative}
-</style>
+.logo svg.lg{width:48px;height:48px;flex:0 0 48px}</style>
 </head>
 <body>
 <a class="skip" href="#main">К содержанию</a>
 <header id="hdr"><div class="wrap hdr">
-<a class="logo" href="index.html" aria-label="Идеалист — на главную"><i aria-hidden="true">И</i><span><b>ИДЕАЛИСТ</b><small>ортодонтический центр</small></span></a>
+<a class="logo" href="index.html" aria-label="Идеалист — на главную"><svg class="lg" viewBox="0 0 100 100" aria-hidden="true"><defs><clipPath id="lgc"><rect width="100" height="100" rx="27"/></clipPath></defs><g clip-path="url(#lgc)"><rect width="100" height="50" fill="#09A7BD"/><rect y="50" width="100" height="50" fill="#0093A2"/><rect class="ic-band" y="46.5" width="100" height="7" fill="#fff"/></g><path class="ic-tooth" d="M31 33c0-11 9-16 17-12 1 .6 2.4.6 3.6 0 8-4 17 1 17 12 0 14-5 29-9 39-2 5-8 5-10 0l-3-9-3 9c-2 5-8 5-10 0-4-10-9-25-9-39z" fill="#0FA0B3" stroke="#fff" stroke-width="5.5" stroke-linejoin="round"/><path class="ic-curl" d="M44 34c2-5 6-7 10-6" fill="none" stroke="#fff" stroke-width="5.5" stroke-linecap="round"/></svg><span><b>ИДЕАЛИСТ</b><small>ортодонтический центр</small></span></a>
 <nav aria-label="Основное меню"><ul>
 <li><a class="link" href="index.html#gigiena">Профгигиена</a></li>
 <li><a class="link" href="index.html#akcii">Акции</a></li>

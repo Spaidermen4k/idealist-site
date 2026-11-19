@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Профессиональная гигиена полости рта в СПб — «Идеалист», м. Лесная</title>
 <meta name="description" content="Комплексная профгигиена с укреплением эмали премиального уровня у м. Лесная. Скидка 10% в день диагностики, 20% в день рождения. Ежедневно 8:30–21:00.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nunito:wght@900&display=swap" rel="stylesheet">
 <link rel="canonical" href="https://idealist-dent.ru/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Профгигиена премиального уровня — ортодонтический центр «Идеалист»">
@@ -25,7 +26,7 @@
 @font-face{font-family:"HNC";font-weight:300;font-display:swap;src:url("assets/fonts/helveticaneuecyr-light-webfont.woff2") format("woff2")}
 @font-face{font-family:"HNC";font-weight:400;font-display:swap;src:url("assets/fonts/helveticaneuecyr-roman-webfont.woff2") format("woff2")}
 @font-face{font-family:"HNC";font-weight:500;font-display:swap;src:url("assets/fonts/helveticaneuecyr-medium-webfont.woff2") format("woff2")}
-:root{--teal:#09A7BD;--teal-d:#07879A;--teal-dd:#065F6C;--teal-l:#E3F5F8;--teal-ll:#F2FAFC;--coral:#FA8E71;--coral-d:#D9573A;--coral-l:#FEEDE7;--ink:#17292C;--muted:#4C6165;--line:#D6E4E7;
+:root{--teal:#09A7BD;--teal-d:#0093A2;--teal-dd:#022C57;--teal-l:#E6F4F7;--teal-ll:#F8F7F3;--coral:#09A7BD;--coral-d:#0093A2;--coral-l:#E6F4F7;--ink:#022C57;--muted:#4A5F7A;--line:#D7E3EA;
 --f:"HNC","Helvetica Neue",Helvetica,Arial,sans-serif}
 *{box-sizing:border-box}
 html{-webkit-font-smoothing:antialiased}
@@ -48,9 +49,9 @@ h2{font-size:clamp(30px,3.6vw,52px)}
 .btn-coral{background:var(--coral-d);color:#fff}.btn-coral::before{background:var(--teal-dd)}
 .btn-ghost{border-color:var(--teal);color:var(--teal-dd)}.btn-ghost::before{background:var(--teal)}.btn-ghost:hover{color:#fff}
 .btn-white{background:#fff;color:var(--teal-dd)}.btn-white::before{background:var(--coral-d)}.btn-white:hover{color:#fff}
-.code{display:inline-flex;align-items:center;gap:8px;font:500 15px var(--f);letter-spacing:.08em;background:var(--coral-l);color:#9C3A22;border:1.5px dashed var(--coral);border-radius:10px;padding:8px 14px;cursor:pointer;transition:background .3s}
-.code:hover{background:#FDDCD0}
-.code small{font-size:11px;letter-spacing:.04em;font-weight:400;text-transform:none;color:#9C3A22;opacity:.8}
+.code{display:inline-flex;align-items:center;gap:8px;font:500 15px var(--f);letter-spacing:.08em;background:var(--coral-l);color:#022C57;border:1.5px dashed var(--coral);border-radius:10px;padding:8px 14px;cursor:pointer;transition:background .3s}
+.code:hover{background:#D3ECF2}
+.code small{font-size:11px;letter-spacing:.04em;font-weight:400;text-transform:none;color:#022C57;opacity:.8}
 
 /* preloader */
 #pre{position:fixed;inset:0;z-index:100;background:var(--teal);display:flex;align-items:center;justify-content:center}
@@ -63,7 +64,7 @@ html:not(.js-anim) #pre{display:none}
 .top .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 20px;padding-top:9px;padding-bottom:9px}
 .top a{text-decoration:none;margin-left:16px}
 header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);transition:box-shadow .3s}
-header.scrolled{box-shadow:0 8px 30px rgba(7,135,154,.08)}
+header.scrolled{box-shadow:0 8px 30px rgba(0,147,162,.08)}
 header .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;height:80px}
 .logo{display:flex;align-items:center;gap:12px;text-decoration:none}
 .logo i{width:48px;height:48px;border-radius:14px;background:var(--teal);color:#fff;display:flex;align-items:center;justify-content:center;font:500 22px var(--f);font-style:normal}
@@ -95,7 +96,7 @@ nav a:hover::after{transform:scaleX(1);transform-origin:left}
 .fact span{font-size:13px;color:var(--muted)}
 .hero-art{position:relative;aspect-ratio:1/1.02}
 .hero-art svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
-.badge{position:absolute;background:#fff;border-radius:18px;padding:14px 18px;box-shadow:0 18px 50px rgba(6,95,108,.16);display:flex;align-items:center;gap:12px;font-size:15px;font-weight:500}
+.badge{position:absolute;background:#fff;border-radius:18px;padding:14px 18px;box-shadow:0 18px 50px rgba(2,44,87,.16);display:flex;align-items:center;gap:12px;font-size:15px;font-weight:500}
 .badge .dot{width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:17px;font-weight:500}
 .badge small{display:block;font-weight:300;color:var(--muted);font-size:12.5px}
 .b1{left:-4%;bottom:12%}.b1 .dot{background:var(--coral-l);color:var(--coral-d)}
@@ -105,7 +106,7 @@ nav a:hover::after{transform:scaleX(1);transform-origin:left}
 .manifest{padding:130px 0}
 .manifest p{font-size:clamp(28px,3.4vw,50px);font-weight:300;line-height:1.22;letter-spacing:-.02em;max-width:1100px;margin:0}
 .manifest .w{color:var(--ink)}
-html.js-anim .manifest .w{color:#C5D5D8}
+html.js-anim .manifest .w{color:#C8D3DF}
 .manifest cite{display:block;margin-top:28px;font-style:normal;font-size:14px;color:var(--muted)}
 
 /* promos */
@@ -118,7 +119,7 @@ html.js-anim .manifest .w{color:#C5D5D8}
 .promo ul{margin:0;padding-left:18px;font-weight:300;font-size:15px;display:flex;flex-direction:column;gap:6px}
 .promo .more{margin-top:auto;font-weight:500;font-size:14px;letter-spacing:.06em;text-transform:uppercase;text-decoration:none}
 .promo .more:hover{text-decoration:underline}
-.p1{background:var(--teal);color:#fff}.p1 .big{color:#fff}.p1 p,.p1 ul{color:#E1F6F9}
+.p1{background:var(--teal);color:#fff}.p1 .big{color:#fff}.p1 p,.p1 ul{color:#EAF5F8}
 .p1 .code{background:rgba(255,255,255,.14);color:#fff;border-color:rgba(255,255,255,.6)}.p1 .code small{color:#fff}
 .p2{background:var(--coral-l)}.p2 .big{color:var(--coral-d)}
 .p3{background:var(--teal-ll);border:1px solid var(--line)}.p3 .big{color:var(--teal-d)}
@@ -128,7 +129,7 @@ html.js-anim .manifest .w{color:#C5D5D8}
 
 /* when */
 .when{padding:120px 0;background:var(--teal-dd);color:#fff}
-.when h2{color:#fff}.when .lead{color:#BCE3E9}.when .eyebrow{color:#9FE3EC}
+.when h2{color:#fff}.when .lead{color:#99D3DF}.when .eyebrow{color:#99D3DF}
 .steps{position:relative;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px;margin-top:56px}
 .rail{position:absolute;left:0;right:0;top:22px;height:2px;background:rgba(255,255,255,.15)}
 .rail i{position:absolute;inset:0;background:var(--coral);transform-origin:left}
@@ -136,7 +137,7 @@ html.js-anim .rail i{transform:scaleX(0)}
 .step{position:relative;padding-top:66px}
 .step::before{content:attr(data-n);position:absolute;top:0;left:0;width:46px;height:46px;border-radius:14px;background:var(--teal);color:#fff;font-size:18px;font-weight:500;display:flex;align-items:center;justify-content:center}
 .step h3{font-size:20px;margin-bottom:8px}
-.step p{margin:0;color:#BCE3E9;font-weight:300;font-size:15px}
+.step p{margin:0;color:#99D3DF;font-weight:300;font-size:15px}
 
 /* hygienists */
 .team{padding:120px 0}
@@ -152,7 +153,7 @@ html.js-anim .rail i{transform:scaleX(0)}
 /* band */
 .band{position:relative;height:84vh;overflow:hidden}
 .band img{position:absolute;left:0;top:-12%;width:100%;height:124%;object-fit:cover}
-.band::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(6,95,108,.82),rgba(6,95,108,0) 60%)}
+.band::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(2,44,87,.82),rgba(2,44,87,0) 60%)}
 .band .cap{position:absolute;z-index:1;left:0;right:0;bottom:52px}
 .band .cap p{margin:0;color:#fff;font-size:clamp(24px,3vw,42px);font-weight:300;letter-spacing:-.02em;max-width:880px;line-height:1.18}
 
@@ -191,23 +192,23 @@ details p{color:var(--muted);font-weight:300;margin:12px 0 0;font-size:16px}
 .contact{background:var(--teal);color:#fff;padding:110px 0;position:relative;overflow:hidden}
 .contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;position:relative;z-index:1}
 .contact h2{color:#fff}
-.contact p{color:#E1F6F9;font-weight:300}
+.contact p{color:#EAF5F8;font-weight:300}
 .contact svg.bg{position:absolute;right:-12%;top:-25%;width:62%;opacity:.12;z-index:0}
 form{display:flex;flex-direction:column;gap:14px;margin-top:26px;max-width:470px}
 label{display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:500}
 input,select{font:400 16px var(--f);padding:15px 16px;border-radius:12px;border:0;background:#fff;color:var(--ink)}
-.consent{flex-direction:row;align-items:flex-start;gap:10px;font-weight:300;font-size:13px;color:#E1F6F9}
-address{font-style:normal;font-size:17px;font-weight:300;line-height:1.85;color:#F0FAFC}
+.consent{flex-direction:row;align-items:flex-start;gap:10px;font-weight:300;font-size:13px;color:#EAF5F8}
+address{font-style:normal;font-size:17px;font-weight:300;line-height:1.85;color:#F8F7F3}
 address b{color:#fff;font-size:20px;font-weight:500}
-.map{margin-top:20px;height:260px;border-radius:22px;background:rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;color:#E1F6F9;font-size:14px;text-align:center;padding:20px}
+.map{margin-top:20px;height:260px;border-radius:22px;background:rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;color:#EAF5F8;font-size:14px;text-align:center;padding:20px}
 
-footer{background:#0A3238;color:#A9C6CA;font-size:14px;font-weight:300}
+footer{background:#022C57;color:#A7B8CC;font-size:14px;font-weight:300}
 footer .cols{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px;padding:56px 0 30px}
 footer b{color:#fff;display:block;margin-bottom:10px}
 footer a{display:block;text-decoration:none;line-height:2}
 footer a:hover{color:#fff}
-.legal{border-top:1px solid #1C4A51;padding:18px 0 28px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;font-size:12.5px}
-.warn{background:#0A3238;color:#fff;text-align:center;font-weight:500;font-size:clamp(13px,1.8vw,19px);letter-spacing:.08em;padding:18px 24px;border-top:1px solid #1C4A51}
+.legal{border-top:1px solid #1A4573;padding:18px 0 28px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;font-size:12.5px}
+.warn{background:#022C57;color:#fff;text-align:center;font-weight:500;font-size:clamp(13px,1.8vw,19px);letter-spacing:.08em;padding:18px 24px;border-top:1px solid #1A4573}
 .toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,120px);background:var(--ink);color:#fff;padding:12px 20px;border-radius:12px;font-size:14px;z-index:90;transition:transform .4s}
 .toast.on{transform:translate(-50%,0)}
 
@@ -241,6 +242,41 @@ nav ul{gap:20px;font-size:13px}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 
 .hero-art,.doc .pic,.band,.v-photo,.dir,.svc-media{position:relative}
+.logo svg.lg{width:48px;height:48px;flex:0 0 48px}
+/* ===== вступление в духе ERA Residence ===== */
+.intro{position:relative;background:#022C57;color:#F8F7F3;overflow:clip}
+.in-pin{position:relative;height:100vh;height:100svh;min-height:560px;overflow:hidden;display:grid;place-items:center}
+html.js-anim .intro{height:250vh}
+html.js-anim .in-pin{position:sticky;top:0}
+.in-ghost{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%) rotate(-8deg);font:900 clamp(120px,30vw,520px)/.8 Nunito,var(--f);letter-spacing:-.04em;color:transparent;-webkit-text-stroke:1.5px rgba(153,211,223,.16);white-space:nowrap;pointer-events:none}
+.in-photo{position:absolute;inset:0;z-index:1;display:none}
+.in-photo img{width:100%;height:100%;object-fit:cover;object-position:72% 44%;transform-origin:72% 44%}
+.in-band{position:absolute;left:0;right:0;top:50%;height:18px;margin-top:-9px;background:#022C57}
+html.js-anim .in-photo{display:block;clip-path:inset(50% 50% 50% 50% round 60px)}
+html.js-anim .in-photo img{transform:scale(1.4)}
+.in-frame{position:absolute;inset:clamp(12px,2vw,24px);z-index:3;pointer-events:none}
+.in-frame i{position:absolute;background:rgba(153,211,223,.38)}
+.in-frame .t,.in-frame .b{left:22px;right:22px;height:1px}.in-frame .t{top:0}.in-frame .b{bottom:0}
+.in-frame .l,.in-frame .r{top:22px;bottom:22px;width:1px}.in-frame .l{left:0}.in-frame .r{right:0}
+.in-frame b{position:absolute;width:31px;height:1px;background:rgba(153,211,223,.38)}
+.in-frame .c1{left:0;top:0;transform-origin:0 0;transform:translate(0,22px) rotate(-45deg)}
+.in-frame .c2{right:0;top:0;transform-origin:100% 0;transform:translate(0,22px) rotate(45deg)}
+.in-frame .c3{left:0;bottom:0;transform-origin:0 100%;transform:translate(0,-22px) rotate(45deg)}
+.in-frame .c4{right:0;bottom:0;transform-origin:100% 100%;transform:translate(0,-22px) rotate(-45deg)}
+.in-side{position:absolute;top:50%;transform:translateY(-50%);z-index:4;font:400 clamp(12px,1.15vw,16px)/1 var(--f);letter-spacing:.5em;text-transform:uppercase;color:#F8F7F3;white-space:nowrap}
+.in-side.l{left:12%}.in-side.r{right:12%}
+.in-logo{position:relative;z-index:4;display:flex;flex-direction:column;align-items:center;text-align:center}
+.in-ic{width:clamp(84px,9vw,128px);height:auto;filter:drop-shadow(0 20px 40px rgba(0,0,0,.25))}
+.in-wm{margin-top:22px;font:900 clamp(44px,7vw,108px)/.9 Nunito,var(--f);letter-spacing:.02em;color:#F8F7F3;display:flex;overflow:hidden;padding-bottom:.06em}
+.in-wm span{display:inline-block}
+.in-logo small{margin-top:14px;font:400 clamp(13px,1.3vw,18px) var(--f);letter-spacing:.35em;text-transform:uppercase;color:#99D3DF}
+.in-foot{position:absolute;left:0;right:0;bottom:clamp(28px,5vh,56px);z-index:4;display:flex;flex-direction:column;align-items:center;gap:16px;text-align:center}
+.in-line{display:block;width:1px;height:clamp(50px,9vh,90px);background:rgba(248,247,243,.6);transform-origin:top}
+.in-foot p{margin:0;font:500 11px/1.5 var(--f);letter-spacing:.18em;text-transform:uppercase;color:#F8F7F3}
+.in-cap{position:absolute;left:0;right:0;bottom:12vh;z-index:4;text-align:center;opacity:0;pointer-events:none}
+.in-cap p{margin:0;font:300 clamp(24px,3.2vw,46px)/1.15 var(--f);letter-spacing:-.02em;color:#fff;text-shadow:0 4px 40px rgba(2,44,87,.55)}
+html:not(.js-anim) .in-cap{display:none}
+@media(max-width:760px){.in-side{display:none}html.js-anim .intro{height:210vh}}
 </style>
 <script>
 /* анимации включаются, только если человек не просил уменьшить движение */
@@ -249,7 +285,18 @@ if(!matchMedia('(prefers-reduced-motion: reduce)').matches){document.documentEle
 </head>
 <body>
 
-<div id="pre" aria-hidden="true"><div class="mk"><i>И</i><span>ИДЕАЛИСТ</span></div></div>
+<section class="intro" id="intro" aria-label="Ортодонтический центр «Идеалист»">
+<div class="in-pin">
+<div class="in-ghost" aria-hidden="true">идеалист</div>
+<div class="in-photo"><img src="assets/img/hero-smile.jpg" alt="Улыбка пациентки клиники «Идеалист»"><span class="in-band"></span></div>
+<div class="in-frame" aria-hidden="true"><i class="t"></i><i class="r"></i><i class="b"></i><i class="l"></i><b class="c1"></b><b class="c2"></b><b class="c3"></b><b class="c4"></b></div>
+<span class="in-side l" aria-hidden="true">С а н к т</span>
+<span class="in-side r" aria-hidden="true">П е т е р б у р г</span>
+<div class="in-logo"><svg class="in-ic" viewBox="0 0 100 100" aria-hidden="true"><defs><clipPath id="lgi"><rect width="100" height="100" rx="27"/></clipPath></defs><g clip-path="url(#lgi)"><rect width="100" height="50" fill="#09A7BD"/><rect y="50" width="100" height="50" fill="#0093A2"/><rect class="ic-band" y="46.5" width="100" height="7" fill="#fff"/></g><path class="ic-tooth" d="M31 33c0-11 9-16 17-12 1 .6 2.4.6 3.6 0 8-4 17 1 17 12 0 14-5 29-9 39-2 5-8 5-10 0l-3-9-3 9c-2 5-8 5-10 0-4-10-9-25-9-39z" fill="#0FA0B3" stroke="#fff" stroke-width="5.5" stroke-linejoin="round"/><path class="ic-curl" d="M44 34c2-5 6-7 10-6" fill="none" stroke="#fff" stroke-width="5.5" stroke-linecap="round"/></svg><div class="in-wm" aria-hidden="true"><span>И</span><span>Д</span><span>Е</span><span>А</span><span>Л</span><span>И</span><span>С</span><span>Т</span></div><small>ортодонтический центр</small></div>
+<div class="in-foot"><span class="in-line"></span><p>ИДЕАЛИСТ<br>10 лет заботимся об улыбках</p></div>
+<div class="in-cap"><p>Ровная улыбка и здоровые зубы —<br>в трёх минутах от метро «Лесная»</p></div>
+</div>
+</section>
 
 <div class="top"><div class="wrap">
 <span>Санкт-Петербург, Лесной пр., д. 67, к. 1 · м. Лесная · с 8:30 до 21:00, без выходных</span>
@@ -257,7 +304,7 @@ if(!matchMedia('(prefers-reduced-motion: reduce)').matches){document.documentEle
 </div></div>
 
 <header id="hdr"><div class="wrap">
-<a class="logo" href="index.html" aria-label="Идеалист — на главную"><i aria-hidden="true">И</i><span><b>ИДЕАЛИСТ</b><small>ортодонтический центр</small></span></a>
+<a class="logo" href="index.html" aria-label="Идеалист — на главную"><svg class="lg" viewBox="0 0 100 100" aria-hidden="true"><defs><clipPath id="lgc"><rect width="100" height="100" rx="27"/></clipPath></defs><g clip-path="url(#lgc)"><rect width="100" height="50" fill="#09A7BD"/><rect y="50" width="100" height="50" fill="#0093A2"/><rect class="ic-band" y="46.5" width="100" height="7" fill="#fff"/></g><path class="ic-tooth" d="M31 33c0-11 9-16 17-12 1 .6 2.4.6 3.6 0 8-4 17 1 17 12 0 14-5 29-9 39-2 5-8 5-10 0l-3-9-3 9c-2 5-8 5-10 0-4-10-9-25-9-39z" fill="#0FA0B3" stroke="#fff" stroke-width="5.5" stroke-linejoin="round"/><path class="ic-curl" d="M44 34c2-5 6-7 10-6" fill="none" stroke="#fff" stroke-width="5.5" stroke-linecap="round"/></svg><span><b>ИДЕАЛИСТ</b><small>ортодонтический центр</small></span></a>
 <nav aria-label="Основное меню"><ul>
 <li><a href="#gigiena">Профгигиена</a></li>
 <li><a href="#akcii">Акции</a></li>
@@ -293,7 +340,7 @@ if(!matchMedia('(prefers-reduced-motion: reduce)').matches){document.documentEle
 </div>
 <div class="hero-art" aria-hidden="true">
 <svg viewBox="0 0 600 620"><defs><clipPath id="hc"><path id="heroClip"/></clipPath></defs>
-<path id="heroShape" fill="#C6ECF2"/>
+<path id="heroShape" fill="#99D3DF"/>
 <image href="assets/img/hero-smile.jpg" x="30" y="40" width="540" height="540" preserveAspectRatio="xMidYMid slice" clip-path="url(#hc)"/>
 </svg>
 <div class="badge b1"><span class="dot">−20%</span><span>в день рождения<small>на комплексную гигиену</small></span></div>
@@ -478,15 +525,47 @@ blob([document.getElementById('heroShape'),document.getElementById('heroClip')],
 blob([document.getElementById('ctaShape')],{r:240,amp:.12,speed:.5});
 
 /* заставка и первый экран */
-var tl=gsap.timeline();
-tl.from('#pre .mk>*',{yPercent:120,stagger:.1,duration:.8,ease:'power4.out'})
-  .to('#pre',{clipPath:'inset(0 0 100% 0)',duration:.9,ease:'power4.inOut'},'+=.25')
-  .from('.hero h1 .line>span',{yPercent:110,stagger:.1,duration:1,ease:'power4.out'},'-=.4')
+/* ===== вступление: появляется при открытии ===== */
+var wm=document.querySelectorAll('.in-wm span');
+var tooth=document.querySelector('.in-ic .ic-tooth'),curl=document.querySelector('.in-ic .ic-curl');
+[tooth,curl].forEach(function(p){var L=p.getTotalLength();p.style.strokeDasharray=L;p.style.strokeDashoffset=L});
+var intro=gsap.timeline({delay:.15});
+intro.from('.in-frame i',{scaleX:0,scaleY:0,duration:1.4,ease:'power3.inOut',stagger:.08})
+  .from('.in-frame b',{opacity:0,duration:.6},'-=.6')
+  .from('.in-ghost',{opacity:0,scale:1.15,duration:2.2,ease:'power2.out'},0)
+  .from('.in-ic',{scale:.3,rotate:-35,opacity:0,duration:1.2,ease:'back.out(1.6)'},.35)
+  .to([tooth,curl],{strokeDashoffset:0,duration:1.1,ease:'power2.inOut',stagger:.15},.8)
+  .from('.in-ic .ic-tooth',{fillOpacity:0,duration:.6},1.5)
+  .from(wm,{yPercent:115,duration:1,ease:'power4.out',stagger:.06},.9)
+  .from('.in-logo small',{opacity:0,letterSpacing:'1em',duration:1.2,ease:'power3.out'},1.4)
+  .from('.in-side',{opacity:0,letterSpacing:'1.2em',duration:1.4,ease:'power3.out'},1.3)
+  .from('.in-line',{scaleY:0,duration:1,ease:'power3.inOut'},1.7)
+  .from('.in-foot p',{opacity:0,y:10,duration:.8},2);
+gsap.to('.in-ghost',{xPercent:-4,duration:9,repeat:-1,yoyo:true,ease:'sine.inOut'});
+gsap.to('.in-line',{opacity:.25,duration:1.1,repeat:-1,yoyo:true,ease:'sine.inOut',delay:3});
+
+/* ===== вступление: скролл раскрывает фото через форму логотипа ===== */
+var inFrom=innerWidth<760?'inset(50% 50% 50% 50% round 40px)':'inset(50% 50% 50% 50% round 60px)';
+var sc=gsap.timeline({scrollTrigger:{trigger:'#intro',start:'top top',end:'bottom bottom',scrub:true}});
+sc.to('.in-logo',{yPercent:-60,opacity:0,scale:.9,ease:'none',duration:.35},0)
+  .to('.in-side.l',{xPercent:-140,opacity:0,ease:'none',duration:.4},0)
+  .to('.in-side.r',{xPercent:140,opacity:0,ease:'none',duration:.4},0)
+  .to('.in-foot',{opacity:0,y:30,ease:'none',duration:.2},0)
+  .to('.in-ghost',{opacity:0,ease:'none',duration:.4},0)
+  .fromTo('.in-photo',{clipPath:inFrom},{clipPath:(innerWidth<760?'inset(30% 22% 30% 22% round 40px)':'inset(30% 38% 30% 38% round 60px)'),ease:'none',duration:.3},.12)
+  .to('.in-photo',{clipPath:'inset(0% 0% 0% 0% round 0px)',ease:'none',duration:.45},.42)
+  .to('.in-photo img',{scale:1,ease:'none',duration:.75},.12)
+  .to('.in-band',{scaleY:0,opacity:0,ease:'none',duration:.25},.55)
+  .to('.in-frame',{opacity:0,ease:'none',duration:.25},.5)
+  .to('.in-cap',{opacity:1,ease:'none',duration:.15},.8);
+
+/* первый экран сайта анимируется, когда до него доходит скролл */
+var tl=gsap.timeline({scrollTrigger:{trigger:'.hero',start:'top 75%'}});
+tl.from('.hero h1 .line>span',{yPercent:110,stagger:.1,duration:1,ease:'power4.out'})
   .from('[data-hero]',{y:26,opacity:0,stagger:.08,duration:.8,ease:'power3.out'},'-=.75')
   .from('.hero-art svg',{scale:.85,opacity:0,duration:1.4,ease:'power3.out'},'-=1.1')
   .from('.badge',{y:30,opacity:0,stagger:.15,duration:.9,ease:'back.out(1.6)'},'-=.9')
-  .from('.offer .pct',{scale:.6,duration:.9,ease:'back.out(2)'},'-=1')
-  .set('#pre',{display:'none'});
+  .from('.offer .pct',{scale:.6,duration:.9,ease:'back.out(2)'},'-=1');
 
 gsap.to('.b1',{y:-60,ease:'none',scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:true}});
 gsap.to('.b2',{y:50,ease:'none',scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:true}});
@@ -496,7 +575,7 @@ ScrollTrigger.create({start:60,end:'max',onToggle:function(s){document.getElemen
 /* цитата: слова проявляются */
 var m=document.getElementById('manifest');
 m.innerHTML=m.textContent.trim().split(/\s+/).map(function(w){return '<span class="w">'+w+'</span>'}).join(' ');
-gsap.to('#manifest .w',{color:'#17292C',stagger:.1,ease:'none',scrollTrigger:{trigger:'#manifest',start:'top 80%',end:'bottom 50%',scrub:true}});
+gsap.to('#manifest .w',{color:'#022C57',stagger:.1,ease:'none',scrollTrigger:{trigger:'#manifest',start:'top 80%',end:'bottom 50%',scrub:true}});
 
 /* заголовки: слова выезжают снизу */
 document.querySelectorAll('[data-split]').forEach(function(el){
