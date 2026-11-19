@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Профессиональная гигиена полости рта в СПб — «Идеалист», м. Лесная</title>
 <meta name="description" content="Комплексная профгигиена с укреплением эмали премиального уровня у м. Лесная. Скидка 10% в день диагностики, 20% в день рождения. Ежедневно 8:30–21:00.">
+<link rel="preconnect" href="https://images.unsplash.com">
 <link rel="canonical" href="https://idealist-dent.ru/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Профгигиена премиального уровня — ортодонтический центр «Идеалист»">
@@ -249,8 +250,9 @@ html.js-anim .intro{height:250vh}
 html.js-anim .in-pin{position:sticky;top:0}
 .in-ghost{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%) rotate(-8deg);font:500 clamp(120px,30vw,520px)/.8 var(--f);letter-spacing:-.04em;color:transparent;-webkit-text-stroke:1.5px rgba(153,211,223,.16);white-space:nowrap;pointer-events:none}
 .in-photo{position:absolute;inset:0;z-index:1;display:none}
-.in-photo img{width:100%;height:100%;object-fit:cover;object-position:72% 44%;transform-origin:72% 44%}
-.in-band{position:absolute;left:0;right:0;top:50%;height:18px;margin-top:-9px;background:#022C57}
+.in-photo img{width:100%;height:100%;object-fit:cover;object-position:45% 42%;transform-origin:45% 42%}
+.in-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(2,44,87,0) 55%,rgba(2,44,87,.55));pointer-events:none}
+.in-band{position:absolute;z-index:1;left:0;right:0;top:50%;height:18px;margin-top:-9px;background:#022C57}
 html.js-anim .in-photo{display:block;clip-path:inset(50% 50% 50% 50% round 60px)}
 html.js-anim .in-photo img{transform:scale(1.4)}
 .in-frame{position:absolute;inset:clamp(12px,2vw,24px);z-index:3;pointer-events:none}
@@ -288,7 +290,7 @@ if(!matchMedia('(prefers-reduced-motion: reduce)').matches){document.documentEle
 <section class="intro" id="intro" aria-label="Ортодонтический центр «Идеалист»">
 <div class="in-pin">
 <div class="in-ghost" aria-hidden="true">идеалист</div>
-<div class="in-photo"><img src="assets/img/hero-smile.jpg" alt="Улыбка пациентки клиники «Идеалист»"><span class="in-band"></span></div>
+<div class="in-photo"><img src="https://images.unsplash.com/photo-1654373535457-383a0a4d00f9?auto=format&fit=crop&w=2000&q=78" srcset="https://images.unsplash.com/photo-1654373535457-383a0a4d00f9?auto=format&fit=crop&w=1000&q=78 1000w, https://images.unsplash.com/photo-1654373535457-383a0a4d00f9?auto=format&fit=crop&w=1600&q=78 1600w, https://images.unsplash.com/photo-1654373535457-383a0a4d00f9?auto=format&fit=crop&w=2000&q=78 2000w" sizes="100vw" alt="Белоснежная ровная улыбка крупным планом" fetchpriority="high"><span class="in-band"></span></div>
 <div class="in-frame" aria-hidden="true"><i class="t"></i><i class="r"></i><i class="b"></i><i class="l"></i><b class="c1"></b><b class="c2"></b><b class="c3"></b><b class="c4"></b></div>
 <span class="in-side l" aria-hidden="true">С а н к т</span>
 <span class="in-side r" aria-hidden="true">П е т е р б у р г</span>
